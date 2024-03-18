@@ -9,6 +9,7 @@ optimizer = torch.optim.SGD([W], lr=0.15)
 
 nb_epochs = 10
 for epoch in range(nb_epochs+1):
+
     hypothesis = x_train * W
 
     cost = torch.mean((hypothesis - y_train)**2)
